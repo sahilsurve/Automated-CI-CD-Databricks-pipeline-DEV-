@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     environment: development
     env:
-      DATABRICKS_HOST: ${{ secrets.PROD_DEPLOYMENT_TARGET_URL }}
+      DATABRICKS_HOST: ${{ secrets.DEV_DEPLOYMENT_TARGET_URL }}
       DATABRICKS_TOKEN: ${{ secrets.DEV_DEPLOYMENT_TARGET_TOKEN }}
-      REPO_PATH: /Workspace/Users/sahilssurve2@gmail.com/Automated-CI-CD-Databricks-pipeline-DEV
+      REPO_PATH: /Workspace/Repos/sahilssurve2@gmail.com/Automated-CI-CD-Databricks-pipeline-DEV
     
     steps:
       - name: Checkout repository
@@ -41,9 +41,9 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     env:
-      DATABRICKS_HOST: ${{ secrets.DEV_DEPLOYMENT_TARGET_URL }}
-      DATABRICKS_TOKEN: ${{ secrets.DEV_DEPLOYMNET_TARGET_TOKEN }}
-      REPO_PATH: /Workspace/Users/sahilssurve2@gmail.com/Automated-CI-CD-Databricks-pipeline-PROD
+      DATABRICKS_HOST: ${{ secrets.PROD_DEPLOYMENT_TARGET_URL }}
+      DATABRICKS_TOKEN: ${{ secrets.PROD_DEPLOYMNET_TARGET_TOKEN }}
+      REPO_PATH: /Workspace/Repos/sahilssurve2@gmail.com/Automated-CI-CD-Databricks-pipeline-PROD
   
     steps:
       - name: Checkout repository
