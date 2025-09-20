@@ -11,7 +11,7 @@ jobs:
     environment: development
     env:
       DATABRICKS_HOST: ${{ secrets.DEV_DEPLOYMENT_TARGET_URL }}
-      DATABRICKS_TOKEN: ${{ secrets.DEV_DEPLOYMENT_TARGET_TOKEN_ }}
+      DATABRICKS_TOKEN: ${{ secrets.DEV_DEPLOYMENT_TARGET_TOKEN }}
       REPO_PATH: /Workspace/Users/sahilssurve2@gmail.com/Automated-CI-CD-Databricks-pipeline-DEV
     
     steps:
